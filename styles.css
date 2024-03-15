@@ -1,0 +1,100 @@
+body {
+    background-image: url('achtergrondfoto.jpg'); /* Vervang 'achtergrondfoto.jpg' met de naam van jouw afbeelding */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+h1 {
+    color: #e44d26; /* Levendige oranje tekstkleur voor hoofdtitel */
+}
+
+p {
+    color: #555; /* Donkergrijze tekstkleur voor paragrafen */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #e44d26; /* Levendige oranje tekstkleur voor labels */
+}
+
+select,
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 10px; /* Ronde hoeken voor knoppen */
+    background-color: #3498db; /* Levendige blauwe achtergrond voor de knop */
+    color: #fff; /* Witte tekstkleur voor de knop */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9; /* Donkerdere blauwe kleur bij hover */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e44d26; /* Levendige oranje achtergrond voor de knop */
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c0392b; /* Donkerdere oranje kleur bij hover */
+}
+
+/* Feestelijke elementen */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e44d26; /* Levendige oranje kleur voor confetti */
+    border-radius: 50%;
+    animation: confetti-fall 8s linear forwards; /* Toegevoegd "forwards" om animatie op eindpositie te houden */
+}
+
+.birthday-hat {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 50px;
+    height: auto;
+    transform: translateX(-50%);
+    animation: hat-fall 8s linear forwards; /* Toegevoegd "forwards" om animatie op eindpositie te houden */
+}
+
+@keyframes confetti-fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes hat-fall {
+    to {
+        top: 100vh;
+    }
+}

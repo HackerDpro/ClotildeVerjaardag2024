@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Service Golden ticket pour Clotilde</title>
+</head>
+<body>
+    <div class="confetti-container">
+        <!-- Regen van confetti bij het openen van de "bonnen.html" pagina -->
+        <div class="confetti"></div>
+        <img src="birthday-hat.png" alt="Verjaardagshoedje" class="birthday-hat">
+    </div>
+
+    <div class="container">
+        <h1>Choisissez votre option</h1>
+        <form id="serviceForm">
+            <label for="options">Que souhaitez-vous faire avec votre Golden Ticket?</label>
+            <select id="options" name="options">
+                <option value="cuisiner">Cuisiner un repas</option>
+                <option value="nettoyer">Nettoyer la maison</option>
+                <option value="aspirer">passe l'aspirateur</option>
+                <option value="déjeuner au lit">Petit déjeuner au lit (avec un service personnalisé)</option>
+                <option value="Un pique-nique ou une sortie dîner">Un pique-nique ou une sortie dîner</option>
+                <option value="cadeaux artisanaux surprises">Quelques cadeaux artisanaux surprises</option>
+                <option value="un massage">Un massage fait par Diego</option>
+                <option value="ranger chambre">Ranger chambre (Diego, mon frère drôle et la meilleure mère du monde entier)</option>
+                <option value="autre">Autre (précisez ci-dessous)</option>
+            </select>
+
+            <label for="autreOption">Autre option</label>
+            <input type="text" id="autreOption" name="autreOption" placeholder="Entrez votre propre option">
+
+            <button type="button" onclick="verstuurBon()">Envoyer</button>
+        </form>
+    </div>
+</body>
+</html>
